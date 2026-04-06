@@ -1,0 +1,96 @@
+header {
+    /* largura da pagina */
+    width: 100%;
+    /* cor de fundo da pagina */
+    background-color: var(--color-primary-2);
+    /* preenchimento da pagina */
+    padding: 28px 8%;
+    /* grudado la encima  */
+    top: 0;
+    /* posição do elemento */
+    position: sticky;
+    z-index: 3;
+   
+}
+
+.navbar {
+    /* largura  */
+    width: 100%;
+    display: flex;
+    /* alinhar os itenms no centro */
+    align-items: center;
+    /* centralizar os elementos em cada canto. (between e por um em cada canto e o resto fica no meio prioriza as pontas) */
+    justify-content: space-between;
+}
+
+/* como é uma id usamos o # */
+#nav-logo {
+    font-size: 24px;
+    color: var(--color-primary-6);
+
+}
+
+/* como é clas usamos o . */
+.nav-list {
+    /* ficar um do lado do outro */
+    display: flex;
+    /* separar os elementos */
+    gap: 55px;
+
+
+}
+
+.nav-item a {
+    /* cor da fonte */
+    color: var(--color-neutra-);
+    /* deixar mais destacado */
+    font-weight: 600;
+}
+
+.mobile-menu, .mobile-btn{
+    display: none;
+
+}
+
+/* ele vai identificar o tamanho da sua tela screen */
+
+@media screen and (max-width: 1170px) {
+    .navbar{
+        display: none;
+    }
+    .mobile-btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .mobile-menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobile-nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 5px;
+    }
+
+    .mobile-nav-list .nav-item{
+        text-align: center;
+    }
+}
+
+/* .mobile-menu {
+    display: none;
+}
+
+.mobile-menu.active {
+    display: block;
+} */
+
+
+
