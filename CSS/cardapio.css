@@ -39,7 +39,48 @@
     height: 70px;
     color: var(--color-primary-1);
     font-size: 1.563rem;
-    right: -10x;
+    right: -10px;
     top: -10px;
     border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.area-img{
+    width: 250px;
+    margin-top: 20%;
+    height: 200px;
+}
+
+.card-imagem{
+    width: 100%;
+    /* border-radius: 50%; */
+    border-radius: 10%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card-title{
+    font-size: 1.5rem;
+    color: var(--color-primary-6);
+    padding: 5px;
+    text-align: center;
+}
+
+.card-descricao{
+    color: gray;
+    text-align: center;
+}
+
+.card-rate i{
+    color: var(--color-primary-6);
+}
+
+.card-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#estrela{
+    color: rgba(0, 0, 0, 0.5);
+    
 }
