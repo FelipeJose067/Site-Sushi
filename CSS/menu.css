@@ -21,12 +21,18 @@ header {
     align-items: center;
     /* centralizar os elementos em cada canto. (between e por um em cada canto e o resto fica no meio prioriza as pontas) */
     justify-content: space-between;
+    
 }
 
 /* como é uma id usamos o # */
 #nav-logo {
-    font-size: 24px;
+    font-size: 25px;
+    /* deixar mais esticado a frase */
+    /* transform: scaleX(1.5); */
     color: var(--color-primary-6);
+    /* deixar tudo na mesma linha */
+    white-space: nowrap;
+    gap: 20px;
 
 }
 
